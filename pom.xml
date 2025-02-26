@@ -11,7 +11,7 @@
 
   <groupId>io.toolisticon.spring</groupId>
   <artifactId>spring-conditions</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <name>${project.artifactId}</name>
   <description>spring-conditions</description>
   <url>https://github.com/toolisticon/spring-conditions/</url>
