@@ -21,7 +21,7 @@ Provides useful Spring-Boot conditions.
 
 <dependency>
   <groupId>io.toolisticon.spring</groupId>
-  <artifactId>spring-conditions</artifactId>
+  <artifactId>spring-boot-conditions</artifactId>
   <version>1.0.0</version>
 </dependency>
 
