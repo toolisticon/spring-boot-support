@@ -10,11 +10,17 @@
   </parent>
 
   <groupId>io.toolisticon.spring</groupId>
-  <artifactId>spring-conditions</artifactId>
+  <artifactId>spring-boot-support</artifactId>
   <version>1.0.0</version>
-  <name>${project.artifactId}</name>
-  <description>spring-conditions</description>
-  <url>https://github.com/toolisticon/spring-conditions/</url>
+  <name>Spring-Boot Support Root</name>
+  <description>Spring-Boot useful support tools and classses.</description>
+  <url>https://github.com/toolisticon/spring-boot-support/</url>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>spring-boot-conditions</module>
+    <module>bom</module>
+  </modules>
 
   <dependencyManagement>
     <dependencies>
@@ -29,20 +35,6 @@
   </dependencyManagement>
 
   <dependencies>
-    <!-- SPRING -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-autoconfigure</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-    </dependency>
-
     <!-- KOTLIN -->
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
@@ -50,12 +42,6 @@
     </dependency>
 
     <!-- TEST -->
-    <dependency>
-      <groupId>org.mockito.kotlin</groupId>
-      <artifactId>mockito-kotlin</artifactId>
-      <version>5.4.0</version>
-      <scope>test</scope>
-    </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
@@ -73,8 +59,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.jetbrains.kotlin</groupId>
-      <artifactId>kotlin-test-junit5</artifactId>
+      <groupId>org.mockito.kotlin</groupId>
+      <artifactId>mockito-kotlin</artifactId>
+      <version>5.4.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -110,9 +97,9 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:git@github.com:toolisticon/spring-conditions.git</connection>
-    <url>scm:git:git@github.com:toolisticon/spring-conditions.git</url>
-    <developerConnection>scm:git:git@github.com:toolisticon/spring-conditions.git</developerConnection>
+    <connection>scm:git:git@github.com:toolisticon/spring-boot-support.git</connection>
+    <url>scm:git:git@github.com:toolisticon/spring-boot-support.git</url>
+    <developerConnection>scm:git:git@github.com:toolisticon/spring-boot-support.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
