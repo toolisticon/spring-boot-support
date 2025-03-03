@@ -1,0 +1,4 @@
+test:
+  foo: "bar"
+  zee: 12
+  baz: true

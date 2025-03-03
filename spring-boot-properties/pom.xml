@@ -8,9 +8,9 @@
     <version>1.0.1-SNAPSHOT</version>
   </parent>
 
-  <artifactId>spring-boot-conditions</artifactId>
-  <name>Spring-Boot Conditions</name>
-  <description>Set of useful Spring Boot conditions</description>
+  <artifactId>spring-boot-properties</artifactId>
+  <name>Spring-Boot Properties</name>
+  <description>Set of useful Spring Boot properties helpers</description>
 
   <dependencies>
     <dependency>
@@ -31,7 +31,7 @@
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-test</artifactId>
+      <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -39,5 +39,6 @@
       <artifactId>slf4j-simple</artifactId>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
 </project>
