@@ -14,4 +14,4 @@ import org.springframework.context.annotation.PropertySource
 @EnableConfigurationProperties(MyProperties::class)
 @Configuration
 @ComponentScan
-open class MyTestConfiguration
+class MyTestConfiguration

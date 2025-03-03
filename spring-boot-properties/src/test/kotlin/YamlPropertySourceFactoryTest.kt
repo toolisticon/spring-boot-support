@@ -4,13 +4,13 @@ import io.toolisticon.spring.properties.fixture.MyProperties
 import io.toolisticon.spring.properties.fixture.MyTestConfiguration
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
-import org.springframework.boot.autoconfigure.AutoConfigurations
+import org.springframework.boot.context.annotation.UserConfigurations
 import org.springframework.boot.test.context.runner.ApplicationContextRunner
 
 class YamlPropertySourceFactoryTest {
 
   private val contextRunner = ApplicationContextRunner()
-    .withConfiguration(AutoConfigurations.of(MyTestConfiguration::class.java))
+    .withConfiguration(UserConfigurations.of(MyTestConfiguration::class.java))
 
   @Test
   fun `properties are loaded from defaults`() {
