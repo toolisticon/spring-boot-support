@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.toolisticon.spring</groupId>
     <artifactId>spring-boot-support</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
   </parent>
 
   <artifactId>spring-boot-support-bom</artifactId>
@@ -17,6 +17,11 @@
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>spring-boot-conditions</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>spring-boot-properties</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>

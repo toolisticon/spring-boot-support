@@ -1,5 +1,8 @@
 name: Development branches
 
+permissions:
+  contents: read
+
 on:
   push:
     branches:
@@ -21,10 +24,10 @@ jobs:
         run: echo ${{ github.ref }}
 
       # Setup JDK and Maven
-      - name: Set up JDK 17
+      - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          java-version: 17
+          java-version-file: .java-version
           distribution: zulu
           cache: maven
 
