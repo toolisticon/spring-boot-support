@@ -29,6 +29,7 @@ Provides useful Spring Boot conditions.
 ### Supported conditions
 
 - `@ConditionalOnMissingQualifiedBean`
+- `@ConditionalOnPropertyExcept`
 
 ### Usage
 
@@ -38,6 +39,20 @@ Provides useful Spring Boot conditions.
   <groupId>io.toolisticon.spring</groupId>
   <artifactId>spring-boot-conditions</artifactId>
 </dependency>
+```
+
+Use `@ConditionalOnPropertyExcept` when a configuration should apply unless a property has one of the excluded
+values. As with Spring Boot's `@ConditionalOnProperty`, every named property must be present unless
+`matchIfMissing` is enabled.
+
+```kotlin
+@Configuration
+@ConditionalOnPropertyExcept(
+  prefix = "example.feature",
+  name = ["mode"],
+  havingValue = ["disabled", "maintenance"]
+)
+class FeatureConfiguration
 ```
 
 ## Spring Boot Properties
