@@ -30,6 +30,7 @@ Provides useful Spring Boot conditions.
 
 - `@ConditionalOnMissingQualifiedBean`
 - `@ConditionalOnPropertyExcept`
+- `@ConditionalOnPropertyValues`
 
 ### Usage
 
@@ -51,6 +52,20 @@ values. As with Spring Boot's `@ConditionalOnProperty`, every named property mus
   prefix = "example.feature",
   name = ["mode"],
   havingValue = ["disabled", "maintenance"]
+)
+class FeatureConfiguration
+```
+
+Use `@ConditionalOnPropertyValues` when a configuration should apply only if a property has one of the provided
+values. As with Spring Boot's `@ConditionalOnProperty`, every named property must be present unless
+`matchIfMissing` is enabled.
+
+```kotlin
+@Configuration
+@ConditionalOnPropertyValues(
+  prefix = "example.feature",
+  name = ["mode"],
+  havingValue = ["enabled", "maintenance"]
 )
 class FeatureConfiguration
 ```
