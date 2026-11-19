@@ -1,0 +1,4 @@
+test:
+  foo: default-foo
+  zee: 12
+  baz: true
